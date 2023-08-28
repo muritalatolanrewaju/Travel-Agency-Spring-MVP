@@ -1,4 +1,4 @@
-# A Spring MVC application for a travel agency
+# A Spring application for a travel agency
 
 Revamping the travel agency's legacy backend to a contemporary Spring framework, emphasizing the development of a
 Minimally Viable Product (MVP) for improved vacation booking experiences.
