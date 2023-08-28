@@ -1,0 +1,22 @@
+<h2>Cart</h2>
+
+<div class="content">
+  <label for="party_size">Party Size:</label>
+  <input #psi (input)="this.sumCartItems(psi.value)" id="party_size" max="20" min="1" name="party_size" type="number"
+         value="{{party_size}}">
+  <!-- passes value of input using #psi (a name for a reference to the html input element) -->
+  <!-- use (input) over (change) or onchange because change only fires once -->
+  <ul *ngFor="let vacation of vacations" id="cart-items">
+    <li><h2>{{vacation.vacation_title}}</h2></li>
+    <ul>
+      <li *ngFor="let excursion of vacation.excursions">{{excursion.excursion_title}}</li>
+    </ul>
+  </ul>
+</div>
+<div class="button-and-total-container">
+  <p>Bag Total: </p>
+  <p>${{package_price | number:'1.2-2'}}</p>
+  <button [routerLink]="['/cart-summary']" class="button-31">
+    <a>Checkout</a>
+  </button>
+</div>
