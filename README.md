@@ -1,43 +1,63 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-# WESTERN GOVERNOR UNIVERSITY 
-## D288 – BACK-END PROGRAMMING
-Welcome to Back-End Programming! This is an opportunity for students to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this project, you will be building your project using IntelliJ IDEA (Ultimate Edition) in a WGU-provided lab environment. You will be working with an existing MySQL database and Angular front-end, which are supplied for you in the lab environment. You will share this project to a private external GitLab repository and backup regularly. If you wish to work on it on your local machine, you will also need to download the Angular front-end application and create your own MySQL database. Use the links on your course page to install the integrated development environments (IDE), MySQL WorkBench, and IntelliJ IDEA, and pull the project from the lab environment.  
+# A Spring MVC application for a travel agency
 
-## SUPPLEMENTAL RESOURCES
+Revamping the travel agency's legacy backend to a contemporary Spring framework, emphasizing the development of a
+Minimally Viable Product (MVP) for improved vacation booking experiences.
 
-1. How to clone a project to IntelliJ using Git?
+## Getting Started
 
-> Ensure that you have Git installed on your system and that IntelliJ is installed
-> using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has
-> been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a
-> prompt
-> to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your
-> credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.
+These instructions will help you set up the project locally and get it running on your machine.
 
-2. How to create a branch and start Development?
+## Prerequisites
 
-- GitLab method
+- Java 11 or later
+- Maven
+- MySQL (or your choice of relational database)
 
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will
-> allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the
-> branch to your repository.
+## Installation
 
-- IntelliJ method
+1. Clone the repository
 
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch.
-> Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to
-> the
-> local repo.
+```bash
+git clone https://github.com/muritalatolanrewaju/Travel-Agency-Spring-MVP.git
+```
 
-## SUPPORT
+2. Navigate to the project root directory
 
-If you need additional support, please navigate to the course page and reach out to your course instructor.
+```bash
+cd Travel-Agency-Spring-MVP
+```
 
-## FUTURE USE
+3. Build the project
 
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use
-in career search, experience, and education!
+```bash
+mvn clean install
+```
 
+## Usage
+
+1. Start the Spring Application
+
+```bash
+mvn spring-boot:run
+```
+
+2. Navigate to the application in your browser
+
+```bash
+http://localhost:8080
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+GNU GPLv3
+
+## Acknowledgements
+
+- Thanks to the original authors of the legacy application
+- Thanks to the [Spring team](https://spring.io/) for their excellent documentation and tutorials
+- Thanks to [Baeldung](https://www.baeldung.com/) for their excellent tutorials
+- Thanks to [Stack Overflow](https://stackoverflow.com/) for their excellent Q&A forum
